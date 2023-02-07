@@ -17,10 +17,11 @@ app.use('/', Routes)
 
 connection();
 
-app.use(express.static(path.join(__dirname, './clieny/build')))
+// app.use(express.static(path.join(__dirname, './clieny/build')))
 
-app.get("*",(req,res)=>{
-  res.sendFile(path.join(__dirname,"./client/build/index.html"))
+app.get("/",(req,res)=>{
+    res.setheader("Access-Control-Allow-Credentials", "true")
+//   res.sendFile(path.join(__dirname,"./client/build/index.html"))
 })
 
 
