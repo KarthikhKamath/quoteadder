@@ -8,7 +8,7 @@ import Routes from "./routes/routes.js";
 import cors from "cors"
 import bodyParser from "body-parser";
 import path from "path"
-const port = process. env. PORT || 4000
+const port = process. env. https://quoter-pwbl.onrender.com || 4000
 
 app.use(bodyParser.json({extended:true}))
 app.use(cors())
