@@ -8,8 +8,8 @@ const getUser = async (req, res)=>{
     res.status(200).json(users)
    }
 
-router.post('/add', addUser)
-router.get('/all', getUser)
+router.post('https://quoter-pwbl.onrender.com/add', addUser)
+router.get('https://quoter-pwbl.onrender.com/all', getUser)
 // router.post('/all', getUser)
 
 export default router 
