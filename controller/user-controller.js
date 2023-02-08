@@ -1,9 +1,8 @@
 import express, { response } from "express"
 import User from "../schema/user-schema.js"
 
- const addUser = async (req, res)=>{
+ export const addUser = async (req, res)=>{
    const user =  req.body
-   console.log(user)
    const newUser = new User(user) 
 
    try{

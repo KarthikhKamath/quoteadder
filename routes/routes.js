@@ -1,6 +1,6 @@
 import express  from "express";
 import  addUser  from "../controller/user-controller.js";
-const router = express.Router()
+const Routes = express.Router()
 import User from "../schema/user-schema.js";
 
 const getUser = async (req, res)=>{
@@ -8,8 +8,8 @@ const getUser = async (req, res)=>{
     res.status(200).json(users)
    }
 
-router.post('https://quoter-pwbl.onrender.com/add', addUser)
-router.get('https://quoter-pwbl.onrender.com/all', getUser)
+Routes.post('/add', addUser)
+Routes.get('/all', getUser)
 // router.post('/all', getUser)
 
-export default router 
+export default Routes 

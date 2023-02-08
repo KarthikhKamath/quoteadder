@@ -8,21 +8,24 @@ import Routes from "./routes/routes.js";
 import cors from "cors"
 import bodyParser from "body-parser";
 import path from "path"
-const PATH = https://quoter-pwbl.onrender.com
-const port = process.env.PORT  || 4000
+const port = process.env.PORT || 4000
 
 app.use(bodyParser.json({extended:true}))
 app.use(cors())
     
-app.use('/', Routes)
+app.use('/', Routes)  
 
 connection();
 
 // app.use(express.static(path.join(__dirname, './clieny/build')))
 
+// app.get("*",(req,res)=>{
+  
+//   res.sendFile(path.join(__dirname,"./client/build/index.html"))
+// })
 
 
-
-app.listen(port, ()=>{
+ 
+app.listen(4000, ()=>{
   console.log("Running")  
 })
